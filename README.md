@@ -2,7 +2,7 @@
 This PySCF-based implementation integrates the *spin-density-functional regularization* (SR) approach into the framework of *Partition Density Functional Theory* (PDFT).
 The SR approach was developed to mitigate artificial spin symmetry breaking in broken-symmetry DFT calculations, particularly for open-shell strongly correlated systems (e.g., singlet diradicals) that lack genuine spin polarization.
 
-**Prerequisites**: A proper **PySCF** installation with the required PDFT modifications must be added before execution.
+**Prerequisites**: Before execution, ensure PySCF is properly installed and modified to support PDFT calculations.
 
 The implementation of the partition potential involves:
 (1) Adding a *Vp* property to the **pyscf.scf.hf object**.
