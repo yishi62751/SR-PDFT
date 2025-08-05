@@ -1,12 +1,12 @@
 # SR-PDFT
-This PySCF-based implementation integrates the spin-density-functional regularization (SR) approach into the framework of Partition Density Functional Theory (PDFT).
+This PySCF-based implementation integrates the *spin-density-functional regularization* (SR) approach into the framework of *Partition Density Functional Theory* (PDFT).
 The SR approach was developed to mitigate artificial spin symmetry breaking in broken-symmetry DFT calculations, particularly for open-shell strongly correlated systems (e.g., singlet diradicals) that lack genuine spin polarization.
 
-Prerequisites: A proper PySCF installation with the required PDFT modifications must be added before execution.
+**Prerequisites**: A proper **PySCF** installation with the required PDFT modifications must be added before execution.
 
 The implementation of the partition potential involves:
-(1) Adding a Vp property to the pyscf.scf.hf object.
-(2) Modifying pyscf.scf.hf.get_hcore() to include Vp in the core Hamiltonian.
+(1) Adding a *Vp* property to the **pyscf.scf.hf object**.
+(2) Modifying **pyscf.scf.hf.get_hcore()** to include *Vp* in the core Hamiltonian.
 
 The evaluation of SR-corrected exchange-correlation energy requires: 
 (1) The unregularized spin-densities of fragments that are obtained from spin-unrestricted KS-DFT calculations with certain DFAs.
@@ -19,5 +19,5 @@ To compute these, two distinct PDFT calculations must be performed:
 Before calling the functions in fragments.py, ensure the following:
 (1) Fragment Definition: The fragments must be explicitly defined in your script.
 (2) Ensemble Treatment: Fragments must be treated as ensembles, with their components and weights properly specified.
-(3) The partition potential (Vp) must be incorporated into the PySCF SCF solver.
+(3) The partition potential (*Vp*) must be incorporated into the PySCF SCF solver.
 
