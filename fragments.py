@@ -2,7 +2,7 @@
 08.05.2025
 Yi Shi
 
-This code was originally developed by Dr. Yuming Shi.
+This code was originally developed by Dr. Yuming Shi (ORCID:0009-0001-0552-1003).
 It serves as an outer layer for performing Kohn-Sham DFT calculations on individual Partition-DFT fragments sequentially.
 
 Before calling the functions in this module, ensure the following:
